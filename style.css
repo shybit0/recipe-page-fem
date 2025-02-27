@@ -1,0 +1,340 @@
+:root {
+    /* colors */
+    --white-color: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    
+    /* font sizes */
+    --root-font-size: 16px; /*paragraph*/
+    font-size: var(--root-font-size);        
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background-color: var(--stone-100);
+    color: var(--stone-900);
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--root-font-size);
+}
+
+.container-fluid{
+    background-color: var(--white-color);
+    width: 45rem;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 5rem auto;
+}
+
+.recipe-header{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2rem 0 1rem;
+    color: var(--stone-900);
+}
+
+.recipe article{
+    color: var(--stone-600);
+}
+
+/* preparation time  */
+div.preparation-time{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--rose-50);
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+div.preparation-time h5{
+    color: var(--rose-800);
+}
+
+div.preparation-time li{
+    line-height: .9em;
+}
+
+div.preparation-time li::marker{
+    color: var(--rose-800);
+}
+
+div.preparation-time span{
+    font-weight: bold;
+    color: var(--stone-600);
+}
+
+/* ingredients */
+.ingredients-header{
+    color: var(--brown-800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2rem 0 1rem;
+}
+
+.ingredients{
+    color: var(--stone-600);
+}
+
+.ingredients li::marker{
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.ingredients ul{
+    list-style-type: square;
+}
+
+/* instructions */
+.instructions-header{
+    color: var(--brown-800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.instructions{
+    color: var(--stone-600);
+}
+
+div.instructions span{
+    font-weight: bold;
+    color: var(--stone-600);
+}
+
+hr{
+    margin: 2rem 0 1.5rem;
+}
+
+.instructions li::marker{
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.instructions li {
+    padding: 0.2rem;
+}
+
+ul, ol{
+    margin-left: -1rem;
+}
+
+li{
+    padding-left: 1rem;
+}
+
+/* nutrition */
+.nutrition-header{
+    color: var(--brown-800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem 0 1rem;
+}
+
+.nutrition{
+    color: var(--stone-600)
+}
+
+th:nth-last-child(even) {
+    color: var(--stone-600);
+    font-weight: normal;
+    padding-left: 2rem;
+}
+
+th:nth-last-child(odd){
+    color: var(--brown-800);
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+td:nth-last-child(even) {
+    color: var(--stone-600);
+    padding-left: 2rem;
+}
+
+td:nth-last-child(odd) {
+    color: var(--brown-800);
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 400px){
+    body{
+        background-color: var(--white-color);
+    }
+    
+    .container-fluid{
+        background-color: var(--white-color);
+        width: 100%;
+        justify-content: center;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .recipe-header{
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 2rem 2rem 1rem;
+        color: var(--stone-900);
+    }
+    
+    .recipe article{
+        color: var(--stone-600);
+        margin: 0 2rem;
+    }
+    
+    /* preparation time  */
+    div.preparation-time{
+        display: inline-block;
+        width: 100%;
+        background-color: var(--rose-50);
+        margin: 1.5rem 2rem 0;
+        padding: 1rem 1.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    div.preparation-time h5{
+        color: var(--rose-800);
+    }
+    
+    div.preparation-time li{
+        line-height: .9em;
+    }
+    
+    div.preparation-time li::marker{
+        color: var(--rose-800);
+    }
+    
+    div.preparation-time span{
+        font-weight: bold;
+        color: var(--stone-600);
+    }
+    
+    /* ingredients */
+    .ingredients-header{
+        color: var(--brown-800);
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 2rem 0 1rem;
+    }
+    
+    .ingredients{
+        color: var(--stone-600);
+        margin: 0 2rem;
+    }
+    
+    .ingredients li::marker{
+        color: var(--brown-800);
+        font-weight: bold;
+    }
+    
+    .ingredients ul{
+        list-style-type: square;
+    }
+    
+    /* instructions */
+    .instructions-header{
+        color: var(--brown-800);
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    div.instructions{
+        color: var(--stone-600);
+        margin: 0 2rem;
+    }
+    
+    div.instructions span{
+        font-weight: bold;
+        color: var(--stone-600);
+    }
+    
+    hr{
+        margin: 2rem;
+    }
+    
+    .instructions li::marker{
+        color: var(--brown-800);
+        font-weight: bold;
+    }
+    
+    .instructions li {
+        padding: 0.2rem;
+    }
+    
+    ul, ol{
+        margin-left: -1rem;
+    }
+    
+    li{
+        padding-left: 1rem;
+    }
+    
+    /* nutrition */
+    .nutrition-header{
+        color: var(--brown-800);
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 1rem 0 1rem;
+    }
+    
+    .nutrition{
+        color: var(--stone-600);
+        margin: 0 2rem;
+        justify-content: center;
+    }
+
+    .table{
+        display: flex;
+        justify-content: center;
+        width: 20rem;
+    }
+    
+    th:nth-last-child(even) {
+        color: var(--stone-600);
+        font-weight: normal;
+        padding-left: 2rem;
+    }
+    
+    th:nth-last-child(odd){
+        color: var(--brown-800);
+        font-weight: bold;
+        padding-left: 2rem;
+    }
+    
+    td:nth-last-child(even) {
+        color: var(--stone-600);
+        padding-left: 2rem;
+    }
+    
+    td:nth-last-child(odd) {
+        color: var(--brown-800);
+        font-weight: bold;
+        padding-left: 2rem;
+    }
+}
