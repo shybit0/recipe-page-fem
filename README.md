@@ -16,7 +16,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ![](images/screenshot.png)
 
-click [here]() for the preview
+click [here](https://shybit0.github.io/recipe-page-fem/) for the preview
 
 ## My process
 
